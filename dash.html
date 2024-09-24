@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <style>
+    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+
+}
+
+
+.top-navbar {
+  background-color: rgb(74, 7, 7);
+  color: #fff;
+  padding: 10px;
+  height: 100px;
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold
+  
+}
+
+
+.sidebar {
+  width: 350px;
+  height: 100vh;
+  background-color: rgba(0, 157, 255, 0.845) ;
+  float: left;
+}
+
+ul {
+    margin-top: 100px;
+  list-style: none;
+  padding: 0;
+}
+
+li a {
+
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+li a:hover {
+  background-color: rosybrown;
+}
+
+
+.main-content {
+  margin-left: 550px;
+  
+  padding: 20px;
+}
+
+.dropbtn {
+   background-color:  rgba(0, 157, 255, 0.845);
+   color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  width: 350px;
+  text-align: left;
+  font-size: x-large;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+    color:whitesmoke;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: x-large;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.dropdown-content a:hover {
+    background-color: rosybrown;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color:rosybrown;
+}
+
+.a:hover .dropbtn {
+    background-color: rosybrown;
+}
+ 
+    .a1{
+    background-color: salmon;
+  color: rosybrown;
+  padding: 16px;
+  width: 350px;
+  font-size: 16px;
+  border: none;
+    }
+    ------------------------------------------------------------
+    * {
+  box-sizing: border-box;
+}
+
+
+.column {
+  float: left;
+  width: 230px;
+  padding: 10px;
+  height: 300px; 
+  background-color:cornsilk;
+  margin-left: 30px;
+}
+
+
+.row:after {
+    width: 95%;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="navbar top-navbar">
+  
+    <div class="logo">
+      <h1 style="margin-top: 30px;">Admin Dashboard</h1></div>
+    
+  </div>
+
+  <div class="container">
+    <div class="sidebar">
+      <ul>
+        <li><a href="dash.html" >Dashboard</a></li>
+         <li><a href="service.html">Service_Bookings</a></li>
+        <li><a href="career.html">carrer</a></li>
+       <li><a href="change.html">change password</a></li>
+      <div class="dropdown">
+            <button class="dropbtn" ><a href="usser.html"></a>Master</button>
+            <div class="dropdown-content">
+                <div class="a1">
+              <a href="#">State</a>
+              <a href="#">District</a>
+              <a href="#">city</a>
+              <a href="#">Employee</a>
+              <a href="#">Services</a>
+              <a href="#">carrier_services</a>
+              <a href="#">Blog</a>
+              <a href="promo.html">promocode</a>
+            </div>
+            
+            </div>
+          </div>
+      </ul>
+    </div>
+
+    <div class="main-content">
+    <br><br><br><br><br><br><br>
+      <h1 style="font-size: xx-large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Welcome  Admin !</h1>
+      <br>
+      <h3>Dashboard</h3>
+      <br><br><br><br><br><br><br>
+      <div class="row">
+        <div id="prog" class="column" >
+          <img src="img/IMG-20231120-WA0001.jpg" width="100px" height="70px" style="float: left;margin-top: 30px;margin-left: 10px;border-radius: 30px;" alt="">
+          <p style="font-size: x-large;margin-top: 50px;margin-left: 150px;">2</p>
+          <br><br><br><br>
+          <h2>Progress</h2>
+          
+          <progress style="height: 40px; " value="2" max="10"></progress>
+       
+        </div>
+        <div id="prog" class="column">
+          <img src="img/IMG-20231120-WA0002.jpg" width="100px" height="70px" style="float: left;margin-top: 30px;margin-left: 10px;border-radius: 30px;" alt="">
+          <p style="font-size: x-large;margin-top: 50px;margin-left: 150px;">2</p>
+          <br><br><br><br>
+          <h2>Districtes</h2>
+    <progress style="height: 40px; " value="2" max="10"></progress>
+   
+        </div>
+        <div id="prog" class="column" >
+          <img src="img/IMG-20231120-WA0003.jpg" width="100px" height="70px" style="float: left;margin-top: 30px;margin-left: 10px;border-radius: 30px;" alt="">
+          <p style="font-size: x-large;margin-top: 50px;margin-left: 150px;">5</p>
+          <br><br><br><br>
+          <h2>cities</h2>
+           <progress style="height: 40px; " value="5" max="10"></progress>
+   
+        </div>
+        <div id="prog" class="column" >
+          <img src="img/IMG-20231120-WA0004.jpg" width="100px" height="70px" style="float: left;margin-top: 30px;margin-left: 10px;border-radius: 30px;" alt="">
+          <p style="font-size: x-large;margin-top: 50px;margin-left: 150px;">1</p>
+          <br><br><br><br>
+          <h2>Employees</h2>
+    <progress  style="height: 40px; " value="5" max="10"></progress>
+   
+        </div>
+        <div id="prog" class="column" >
+         <img src="img/IMG-20231120-WA0005.jpg" width="100px" height="70px" style="float: left;margin-top: 30px;margin-left: 10px; border-radius: 30px;" alt="">
+         <p style="font-size: x-large;margin-top: 50px;margin-left: 150px;">6</p>
+         <br><br><br><br>
+         <h2>Carreer_Requests</h2>
+          <progress style="height: 40px; " value="6" max="10"></progress>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
